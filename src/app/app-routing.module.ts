@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
+import {AnalyticsComponent  } from './modules/analytics/analytics.component';
+import {HomeComponent  } from './home/home.component';
+
 const routes: Routes = [
-  {path: 'analytics', loadChildren:'./modules/analytics/analytics.module#AnalyticsModule'}
+  {path: '', component: HomeComponent},
+  {path: 'analytics', component: AnalyticsComponent}
 ];
 
 @NgModule({
@@ -10,3 +14,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export const routingComponents = [HomeComponent, AnalyticsComponent];
