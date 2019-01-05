@@ -1,4 +1,13 @@
 <div class="header">
-    header works!
+    <span>
+
+      <a routerLink="/home">header works!</a>
+    </span>
+    <span> Nav:
+
+        <a routerLink="/home/analytics" routerLinkActive="router-link-active">Analytics</a>
+        <a [routerLink]="['/home/patients']" routerLinkActive="router-link-active">Patients</a>
+    </span>
+    <span> account & settings</span>
 </div>
 

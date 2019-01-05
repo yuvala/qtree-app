@@ -5,6 +5,7 @@ import { AppRoutingModule , routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
 import { ModulesComponent } from './modules/modules.component';
+
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { FooterComponent } from './home/footer/footer.component';

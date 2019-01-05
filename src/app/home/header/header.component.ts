@@ -11,5 +11,11 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit() {
   }
+  showAnalytics() {
+    console.log(this);
+  }
 
+  showPatients() {
+    console.log(this);
+  }
 }
