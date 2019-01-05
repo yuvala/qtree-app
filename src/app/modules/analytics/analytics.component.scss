@@ -1,0 +1,29 @@
+
+
+
+.analytics {
+  align-items: unset;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+
+
+
+  display:flex;
+  justify-content: stretch;
+  align-items: stretch;
+  .main {
+   // border:1px green solid;
+    flex-grow: 0;
+  }
+  .asside {
+  border:1px blue solid;
+    flex-grow: 1;
+  }
+  _div {
+   // border:1px red solid;
+    flex-grow: 1;
+  }
+}

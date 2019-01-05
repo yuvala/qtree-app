@@ -1,16 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 .styles.scss {
-  border:1px red solid !important;
+  //border:1px red solid !important;
 }
-.div {
-  border:1px red solid !important;
+div {
+ // border:1px red solid ;
 }
-BODY{
+BODY {
+  font-size: 12px;
+ 
   margin: 0;
-  color:#ffffff;
+  color:#dddddd;
   font-family: Arial, Helvetica, sans-serif;
   a {
-    color:yellow;
+    color:rgb(194, 194, 1);
+    &:hover{
+      color:rgb(255, 255, 5);
+    }
   }
-
-  }
+}

@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { AnalyticsRoutingModule } from './analytics-routing.module';
 import { AnalyticsComponent } from './analytics.component';
+import { ChartComponent } from './chart/chart.component';
 
 @NgModule({
-  declarations: [AnalyticsComponent],
+  declarations: [AnalyticsComponent, ChartComponent],
   imports: [
     CommonModule,
     AnalyticsRoutingModule

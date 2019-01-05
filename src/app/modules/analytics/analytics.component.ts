@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Router} from '@angular/router';
 @Component({
   selector: 'app-analytics',
   templateUrl: './analytics.component.html',
@@ -21,7 +21,12 @@ export class AnalyticsComponent implements OnInit {
     }
 
   ];
-  constructor() { }
+
+  seletChart (item) {
+    this.router.navigate(['/home/analytics/chart', item.id]);
+    console.log('seletChart');
+  }
+  constructor(private router: Router) { }
 
   ngOnInit() {
   }
