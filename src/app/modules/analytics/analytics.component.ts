@@ -24,8 +24,8 @@ export class AnalyticsComponent implements OnInit {
 
   seletChart (item) {
     this.router.navigate(['/home/analytics/chart', item.id]);
-    console.log('seletChart');
   }
+
   constructor(private router: Router) { }
 
   ngOnInit() {
