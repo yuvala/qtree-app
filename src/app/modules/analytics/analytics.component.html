@@ -1,13 +1,18 @@
 <div class="analytics">
  <div class="main">
     <h1>Analytics</h1>
-      <ul>
-        <li (click)="seletChart(item)" *ngFor="let item of analyticsCharts">
-
+    <ul>
+        <li (click)="selectChart(item)" *ngFor="let item of analyticsCharts">
             <span>{{item.name}}</span> - <span>{{item.id}}</span>
-          
         </li>
       </ul>
+      <ul>
+          <li (click)="selectChart(item)" *ngFor="let item of analyticsCharts">
+            <a [routerLink]="['/home/analytics/chart/'+ item.id]" routerLinkActive="router-link-active" >
+            <span>{{item.name}}</span> - <span>{{item.id}}</span>
+          </a>
+          </li>
+        </ul>
 
 </div>
 
