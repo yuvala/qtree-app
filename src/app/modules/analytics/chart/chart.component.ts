@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {AnalyticsService} from './../analytics.service';
+import * as _ from 'lodash';
 
 @Component({
   selector: 'app-chart',
@@ -20,7 +21,7 @@ public  itemId;
     this.chartList = this.analyticsService.getChartType();
     this.route.paramMap.subscribe(params => {
         this.selectedId = +params.get('id');
-        this.selectedType = this.chartList
+        this.selectedType = _.filter(this.selectedId ,(key) => key.id = this.selectedId);
        }
 
     );
