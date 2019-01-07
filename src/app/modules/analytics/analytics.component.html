@@ -1,6 +1,7 @@
 <div class="analytics">
  <div class="main">
     <h1>Analytics</h1>
+
     <ul>
         <li (click)="selectChart(item)" *ngFor="let item of analyticsCharts">
             <span>{{item.name}}</span> - <span>{{item.id}}</span>

@@ -5,6 +5,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
+
+import {MatGridListModule} from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule , routingComponents} from './app-routing.module';
@@ -30,6 +32,7 @@ import { FooterComponent } from './home/footer/footer.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    MatGridListModule,
     BrowserAnimationsModule,
     MatInputModule,
     MatButtonModule,
