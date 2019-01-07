@@ -1,20 +1,41 @@
+// got explainatio from: https://medium.com/@ismapro/first-steps-with-angular-cli-and-angular-material-5a90406e9a4
+
 /* You can add global styles to this file, and also import other style files */
-.styles.scss {
-  //border:1px red solid !important;
+@import '~@angular/material/theming';
+@import url('//fonts.googleapis.com/icon?family=Material+Icons');
+
+@include mat-core();
+
+$primary: mat-palette($mat-lime, 500);
+$accent:  mat-palette($mat-lime, 500, A200, A400);
+$warn:    mat-palette($mat-red, 500);
+
+$config: mat-typography-config();
+
+
+$theme: mat-light-theme($primary, $accent, $warn);
+
+@include angular-material-theme($theme);
+
+body {
+  font-family: mat-font-family($config);
+  font-weight: normal;
 }
-div {
- // border:1px red solid ;
+
+h1, h2, h3, h4 {
+  font-weight: normal;
 }
-BODY {
-  font-size: 12px;
+
+// BODY {
+//   font-size: 12px;
  
-  margin: 0;
-  color:#dddddd;
-  font-family: Arial, Helvetica, sans-serif;
-  a {
-    color:rgb(194, 194, 1);
-    &:hover{
-      color:rgb(255, 255, 5);
-    }
-  }
-}
+//   margin: 0;
+//   color:#dddddd;
+//   font-family: Arial, Helvetica, sans-serif;
+//   a {
+//     color:rgb(194, 194, 1);
+//     &:hover{
+//       color:rgb(255, 255, 5);
+//     }
+//   }
+// }
