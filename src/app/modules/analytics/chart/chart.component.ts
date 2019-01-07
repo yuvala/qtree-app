@@ -21,7 +21,7 @@ public  itemId;
     this.chartList = this.analyticsService.getChartType();
     this.route.paramMap.subscribe(params => {
         this.selectedId = +params.get('id');
-        this.selectedType = _.filter(this.selectedId ,(key) => key.id = this.selectedId);
+        this.selectedType = _.filter(this.selectedId , (key) => key.id = this.selectedId);
        }
 
     );

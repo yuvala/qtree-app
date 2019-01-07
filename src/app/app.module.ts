@@ -1,6 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
+import { MatInputModule, MatButtonModule, MatSelectModule, MatIconModule } from '@angular/material';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { AppRoutingModule , routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreComponent } from './core/core.component';
@@ -22,6 +28,13 @@ import { FooterComponent } from './home/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    HttpModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
+    MatSelectModule,
+    MatIconModule,
     AppRoutingModule
   ],
   providers: [],
