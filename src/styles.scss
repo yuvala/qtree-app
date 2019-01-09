@@ -27,16 +27,33 @@ h1, h2, h3, h4 {
   font-weight: normal;
 }
 
-// BODY {
-//   font-size: 12px;
 
-//   margin: 0;
-//   color:#dddddd;
-//   font-family: Arial, Helvetica, sans-serif;
-//   a {
-//     color:rgb(194, 194, 1);
-//     &:hover{
-//       color:rgb(255, 255, 5);
-//     }
-//   }
-// }
+.app-container {
+  border:1px red solid;
+  display: flex;
+  justify-content:space-between;
+  flex-direction: column;
+  position: absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  right:0;
+
+  header, footer {
+    height:50px;
+    border:1px green solid;
+    flex-grow: 0px;
+    background-color:blue;
+  }
+
+  .main-container{
+    height:50px;
+    border:1px green solid;
+    flex-grow: 0px;
+    background-color:rgb(58, 58, 58);
+  }
+  app-home {
+    height:100%;
+  }
+}
+
